@@ -71,8 +71,9 @@ public class AgenciaBancaria {
 		String cpf = input.next();
 		
 
-		if (cpf.length() != 11) {
-			System.out.println("");
+		while (cpf.length() != 11) {
+			System.out.println("Digite novamente seu CPF");
+			cpf = input.next();
 		}
 		
 		System.out.println("\nEmail: ");
